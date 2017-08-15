@@ -1,21 +1,5 @@
 # MixProper
 
-**TODO: Add description**
-
-## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `mix_proper` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:mix_proper, "~> 0.1.0"}
-  ]
-end
-```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/mix_proper](https://hexdocs.pm/mix_proper).
-
+Run [PropEr](http://proper.softlab.ntua.gr) test suites with 
+[mix](https://hexdocs.pm/mix/Mix.html). Inspired by
+[rebar3_proper](https://github.com/ferd/rebar3_proper).
