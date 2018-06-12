@@ -8,9 +8,12 @@ defmodule Mix.Tasks.Proper do
   def run([]) do
     "test/**/*_prop.exs"
     |> Path.wildcard
-    |> run
+    |> do_run()
   end
-  def run(files) do
+  def run(file_list) do
+    do_run(file_list)
+  end
+  defp do_run(files) do
     files
     |> Kernel.ParallelRequire.files
     |> run_properties_for_modules
