@@ -1,6 +1,10 @@
 defmodule Mix.Tasks.Proper do
   use Mix.Task
 
+  @shortdoc "Run property tests (uses PropEr)"
+  @moduledoc @shortdoc
+
+  @doc false
   def run([]) do
     "test/**/*_prop.exs"
     |> Path.wildcard
