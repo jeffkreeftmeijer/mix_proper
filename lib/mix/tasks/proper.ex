@@ -6,9 +6,9 @@ defmodule Mix.Tasks.Proper do
 
   @doc false
   def run([]) do
-    "test/**/*_prop.exs"
-    |> Path.wildcard
-    |> do_run()
+    suites =
+      Path.wildcard("test/**/*_prop.exs") ++ Path.wildcard("apps/**/test/**/*_prop.exs")
+    do_run(suites)
   end
   def run(file_list) do
     do_run(file_list)
